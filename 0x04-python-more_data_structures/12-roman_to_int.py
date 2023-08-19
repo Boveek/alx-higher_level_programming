@@ -9,6 +9,8 @@ def roman_to_int(roman_string):
             'D': 500,
             'M': 1000
             }
+    if not isinstance(roman_string, str) or roman_string is None:
+        return 0
     num = len(roman_string)
     summ = 0
     for n in range(num - 1):
