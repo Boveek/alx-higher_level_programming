@@ -14,7 +14,7 @@ def roman_to_int(roman_string):
     num = len(roman_string)
     summ = 0
     for n in range(num - 1):
-        if ((roman_value[roman_string[n]]) < (roman_value[roman_string[n + 1]])):
+        if (roman_value[roman_string[n]] < roman_value[roman_string[n + 1]]):
             summ -= roman_value[roman_string[n]]
         else:
             summ += roman_value[roman_string[n]]
