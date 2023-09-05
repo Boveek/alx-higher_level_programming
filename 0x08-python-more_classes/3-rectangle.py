@@ -60,7 +60,7 @@ class Rectangle:
             return ""
         lists = []
         for i in range(0, self.height):
-            for i in range(0, self.width):
+            for j in range(0, self.width):
                 lists.append("#")
             if i != self.__height - 1:
                 lists.append('\n')
