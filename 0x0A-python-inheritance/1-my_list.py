@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ A class declaration """
 
+
 class MyList(list):
     """ A subclass that inherits from parent class list """
 

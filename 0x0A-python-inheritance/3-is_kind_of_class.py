@@ -10,7 +10,7 @@ def is_kind_of_class(obj, a_class):
         a_class: The class to be compared with.
 
     Returns:
-        True if the object is exactly an instance of the specified class 
+        True if the object is exactly an instance of the specified class
         and False if otherwise.
     """
 
