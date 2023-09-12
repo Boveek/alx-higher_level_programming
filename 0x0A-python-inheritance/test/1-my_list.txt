@@ -1,0 +1,22 @@
+""" Test case """
+
+>>> my_list = MyList([3, 1, 4, 2, 6])
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 6]
+
+>>> single_list = MyList([36])
+>>> single_list.print_sorted()
+[36]
+
+>>> empty_list = MyList([])
+>>> empty_list.print_sorted()
+[]
+
+>>> duplicate = MyList([2, 4, 1, 4, 2, 1])
+>>> duplicate.print_sorted()
+[1, 1, 2, 2, 4, 4]
+
+>>> negative_list = MyList([-2, -4, -1, -4, -2, -1])
+>>> negative_list.print_sorted()
+[-4, -4, -2, -2, -1, -1]
+
