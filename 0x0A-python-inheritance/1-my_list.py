@@ -6,10 +6,5 @@ class MyList(list):
     """ A subclass that inherits from parent class list """
 
     def print_sorted(self):
-        """
-        Function that sorts a list of integer in ascending order.
-
-        Returns:
-            A sorted list
-        """
+        """ Function that sorts a list of integer in ascending order """
         print(sorted(self))
