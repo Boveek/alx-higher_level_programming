@@ -4,7 +4,11 @@
 
 from models.base import Base
 class Rectangle(Base):
+	""" A rectangle class """
+
 	def __init__(self, width, height, x=0, y=0, id=None):
+		""" Instancialisation constructor """
+
 		if type(width) is not int:
 			raise TypeError("width must be an integer")
 		if width <= 0:
@@ -29,6 +33,7 @@ class Rectangle(Base):
 
 	@property
 	def width(self):
+		""" Width of the rectangle """
 		return self.__width
 
 	@width.setter
@@ -41,6 +46,7 @@ class Rectangle(Base):
 
 	@property
 	def height(self):
+		""" Height of the rectangle"""
 		return self.__height
 
 	@height.setter
@@ -53,6 +59,7 @@ class Rectangle(Base):
 
 	@property
 	def x(self):
+		""" x of the rectangle"""
 		return self.__x
 
 	@x.setter
@@ -65,6 +72,7 @@ class Rectangle(Base):
 
 	@property
 	def y(self):
+		""" y of the rectangle"""
 		return self.__y
 
 	@y.setter
@@ -76,18 +84,22 @@ class Rectangle(Base):
 		self.__y = value
 
 	def area(self):
+		""" Calculates the area of the rectangle"""
 		return self.__height * self.__width
 
 	def display(self):
+		""" Prints string representation of this rectangle"""
 		for i in range(self.__y):
 			print()
 		for i in range(self.__height):
 			print(" " * self.__x + "#" * self.__width)
 
 	def __str__(self):
+		""" Returns string info about this rectangle"""
 		return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__, self.id, self.__x, self.__y, self.__width, self.__height)
 
 	def update(self, *args, **kwargs):
+		""" Updates instance attributes via no-keyword & keyword args"""
 		if args:
 			if len(args) >= 1:
 				self.id = args[0]
